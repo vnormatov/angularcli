@@ -1,4 +1,3 @@
-
 import {Component} from '@angular/core';
 
 @Component({
@@ -7,7 +6,10 @@ import {Component} from '@angular/core';
 })
 export class ServerComponent {
 
-  public onShowServer() {
+  serverId = 10;
+  private serverStatus = 'offline';
 
+  public getServerStatus(): string {
+    return this.serverStatus;
   }
 }
