@@ -2,6 +2,7 @@
   <div class="row">
     <label>
       <input class="form-control" type="text" (input)="onUpdateServerName($event)">
+      <input class="form-control" type="text" [(ngModel)]="serverName">
       <p>{{serverName}}</p>
     </label>
     <div class="col-lg-6">
