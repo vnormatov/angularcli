@@ -1,4 +1,4 @@
-[![Build Status](https://github.com/vnormatov/angularcli.svg?branch=master)]https://github.com/vnormatov/angularcli)
+[![Build Status](https://travis-ci.org/vnormatov/angularcli.svg?branch=master)](https://travis-ci.org/vnormatov/angularcli)
 
 # MyApp
 
