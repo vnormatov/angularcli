@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {element} from "protractor";
 
 @Component({
   selector: 'app-servers',
@@ -9,6 +10,7 @@ export class ServersComponent implements OnInit {
 
   public serverCreationStatus = 'No server was created';
   public allowNewServer = true;
+  public serverName = '';
 
   constructor() {
     setTimeout(() => {
@@ -18,6 +20,10 @@ export class ServersComponent implements OnInit {
 
   public OnServerCreated(): void {
     this.serverCreationStatus = 'Server was created';
+  }
+
+  public onUpdateServerName(event: Event): void {
+    this.serverName = (<HTMLInputElement>event.target).value;
   }
 
   ngOnInit() {
