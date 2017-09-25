@@ -1,8 +1,8 @@
 <div class="container">
   <div class="row">
     <label>
-      <!--<input class="form-control" type="text" (input)="onUpdateServerName($event)">-->
-      <input class="form-control" type="text" [(ngModel)]="serverName">
+      <input class="form-control" type="text" (input)="onUpdateServerName($event)">
+      <!--<input class="form-control" type="text" [(ngModel)]="serverName">-->
       <!--<p>{{serverName}}</p>-->
     </label>
     <div class="col-lg-6">
@@ -10,7 +10,8 @@
               (click)="OnServerCreated()"
       >add new server
       </button>
-      <p>{{serverCreationStatus}}</p>
+      <!--<p>{{serverCreationStatus}}</p>-->
+      <p *ngIf="serverCreated">{{serverCreationStatus}}</p>
     </div>
   </div>
   <div class="row">
